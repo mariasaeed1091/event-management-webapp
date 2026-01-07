@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #fdeff9, #ecf0ff);
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #2c2c2c;
+    text-align: center;
+    padding: 25px;
+    font-size: 26px;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin: 25px;
+}
+
+.search-section input {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Events Container */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Event Card */
+.event-card {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+}
+
+/* Past Events */
+.past {
+    background-color: #f3e6ea;
+    opacity: 0.85;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #ff9a9e, #fbc2eb);
+    color: #2c2c2c;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+    border-radius: 22px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #fbc2eb, #ff9a9e);
+}
+
+/* Form Section */
+.form-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 25px;
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+/* Form */
+form {
+    max-width: 420px;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 12px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+form textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* Warning Message */
+.warning {
+    color: #e74c3c;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #fad0c4, #ff9a9e);
+    color: #2c2c2c;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .event-card {
+        width: 90%;
+    }
+
+    .search-section input {
+        width: 95%;
+    }
+}

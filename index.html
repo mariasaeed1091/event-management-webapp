@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Event Horizon</h1>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search events by name or date...">
+    </section>
+
+    <!-- Event List -->
+    <section class="events-container" id="eventsContainer">
+        <!-- Events will be added here dynamically -->
+    </section>
+
+    <!-- Add Event Form -->
+    <section class="form-section">
+        <h2>Add New Event</h2>
+
+        <form id="eventForm">
+            <input type="text" id="eventName" placeholder="Event Name">
+            <input type="date" id="eventDate">
+            <textarea id="eventDescription" placeholder="Event Description"></textarea>
+
+            <button type="submit">Add Event</button>
+            <p class="warning" id="warningMsg"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by MARIA SAEED <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
